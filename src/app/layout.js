@@ -41,8 +41,8 @@ export default function RootLayout({ children }) {
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
         <meta
-          // property="og:image"
-          // content="https://assets.maccarianagency.com/screenshots/the-front/social.png"
+          property="og:image"
+          content="https://assets.expertbrokers.com.au/socialimage.webp"
         />
         <meta
           property="og:title"
