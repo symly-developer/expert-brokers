@@ -93,11 +93,15 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
         <Box marginLeft={4}>
           <Button
             variant="contained"
-            color="primary"
+            color={colorInvert ? 'secondary' : 'primary'}
             component="a"
             target="blank"
             href='/contact-sidebar-map#contact-block'
             size="large"
+            sx={{
+              color: colorInvert ? 'common.black' : 'common.white',
+              fontWeight: 700,
+            }}
           >
             Contact Now
           </Button>

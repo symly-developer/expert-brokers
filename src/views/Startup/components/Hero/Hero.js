@@ -139,12 +139,15 @@ const Hero = () => {
                 <Stack direction="row" spacing={2}>             
                   <Button
                     variant="contained"
-                    color="primary"
+                    color="secondary"
                     component="a"
                     target="blank"
                     href="/contact-sidebar-map#contact-block"
                     size="large"
-                    
+                    sx={{
+                      color: theme.palette.common.black,
+                      fontWeight: 700,
+                    }}
                   >
                     Get In Touch
                   </Button>
