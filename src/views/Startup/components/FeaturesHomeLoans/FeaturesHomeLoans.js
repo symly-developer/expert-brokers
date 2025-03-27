@@ -20,17 +20,17 @@ const FeaturesHomeLoans = () => {
         <Grid item container alignItems={'center'} xs={12} md={6} lg={6}>
           <Box
            sx={{
-              backgroundColor: 'primary.dark',
+              backgroundColor: 'fix2.darkdark',
               borderRadius: 2,
               boxShadow: 4,
             
             }}
           >
             <Box marginBottom={2} padding={2} >
-              <Typography color='secondary.main' component={'h2'} variant={'h4'} sx={{ fontWeight: 700 }} gutterBottom>
+              <Typography color='fix2.lightlight' component={'h2'} variant={'h4'} sx={{ fontWeight: 700 }} gutterBottom>
                 Home loans made easy with speed and efficient processing.
               </Typography>
-              <Typography color="secondary.main">
+              <Typography color="fix2.lightlight">
                 When applying for a home loan, it doesn't have to be complicated. We make it easy for you to get the financing you need for your home.
                 We offer a range of home loan products to suit your needs.
                 <br /><br />
@@ -51,7 +51,7 @@ const FeaturesHomeLoans = () => {
                     disableGutters
                     width={'auto'}
                     padding={0}
-                    color={theme.palette.secondary.main}
+                    color={'fix2.lightlight'}
                   >
                     <Box
                       component={ListItemAvatar}
@@ -63,7 +63,7 @@ const FeaturesHomeLoans = () => {
                     >
                       <Box
                         component={Avatar}
-                        bgcolor={theme.palette.secondary.main}
+                        bgcolor={'fix2.lightlight'}
                         width={20}
                         height={20}
                       >
@@ -72,7 +72,7 @@ const FeaturesHomeLoans = () => {
                           height={12}
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 20 20"
-                          fill={theme.palette.primary.main}
+                          fill={'fix2.darkdark'}
                         >
                           <path
                             fillRule="evenodd"
@@ -161,11 +161,11 @@ const FeaturesHomeLoans = () => {
             }}
               
               >
-            <Box marginBottom={2} padding={2} >
+            <Box marginBottom={2} padding={2} color={'fix2.darkdark'}>
               <Typography component={'h2'} variant={'h4'} sx={{ fontWeight: 700 }} gutterBottom>
                 Any other loans ? We have you covered.
               </Typography>
-              <Typography color="text.secondary">
+              <Typography >
                 We provide a range of finance services for all your needs. Whether you're looking to buy a new car, renovate your home, or consolidate your debts, start a new business or expand your business we have the right loan for you.
                 
               </Typography>
@@ -186,7 +186,7 @@ const FeaturesHomeLoans = () => {
                     disableGutters
                     width={'auto'}
                     padding={0}
-                    
+                    color={'fix2.darkdark'}
                   >
                     <Box
                       component={ListItemAvatar}
@@ -197,7 +197,7 @@ const FeaturesHomeLoans = () => {
                     >
                       <Box
                         component={Avatar}
-                        bgcolor={theme.palette.primary.main}
+                        bgcolor={'fix2.darkdark'}
                         width={20}
                         height={20}
                       >

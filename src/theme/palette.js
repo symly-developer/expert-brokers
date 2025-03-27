@@ -7,7 +7,10 @@ export const light = {
   mode: 'light',
  
   fix2: {
-    main: 'rgba(20, 88, 214, 0.99)',
+    lightlight: '#f9b934',
+    lightdark: '#FF9800',
+    darkdark: 'rgba(11, 23, 47, 0.99)',
+    
   },
 
   primary: {
@@ -52,6 +55,9 @@ export const dark = {
   },
   mode: 'dark',
   fix2: {
+    lightlight: '#f9b934',
+    lightdark: '#FF9800',
+    darkdark: 'rgba(67, 74, 88, 0.99)',
     main: '#ffffff',
   },
   primary: {
