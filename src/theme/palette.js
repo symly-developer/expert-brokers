@@ -55,9 +55,9 @@ export const dark = {
     main: '#ffffff',
   },
   primary: {
-    main: 'rgba(9, 40, 103, 0.99)',
-    light: 'rgba(20, 88, 214, 0.99)',
-    dark: 'rgba(11, 23, 47, 0.99)',
+    light: '#ffb74d',
+    main: '#f9b934',
+    dark: '#FF9800',
     contrastText: '#fff',
     fix: '#ffffff',
   },

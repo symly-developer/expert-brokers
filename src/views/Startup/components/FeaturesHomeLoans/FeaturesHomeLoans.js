@@ -72,7 +72,7 @@ const FeaturesHomeLoans = () => {
                           height={12}
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 20 20"
-                          fill="currentColor"
+                          fill={theme.palette.primary.main}
                         >
                           <path
                             fillRule="evenodd"
@@ -158,7 +158,6 @@ const FeaturesHomeLoans = () => {
               backgroundColor: 'secondary.dark',
               borderRadius: 2,
               boxShadow: 4,
-              
             }}
               
               >
