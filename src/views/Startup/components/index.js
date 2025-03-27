@@ -1,0 +1,15 @@
+// export { default as Team } from './Team';
+// export { default as Features } from './Features';
+export { default as Hero } from './Hero';
+// export { default as Partners } from './Partners';
+// export { default as Process } from './Process';
+// export { default as Reviews } from './Reviews';
+// export { default as Work } from './Work';
+export { default as Goby } from './Goby';
+// export { default as HeroWithBackgroundVideo } from './HeroWithBackgroundVideo';
+// export { default as HeroWithPrimaryBackgroundAndDesktopScreenshot} from './HeroWithPrimaryBackgroundAndDesktopScreenshot';
+// export { default as WithHighlightedCard } from './WithHighlightedCard';
+// export  { default as CtaAlignedLeftWithTypedText } from './CtaAlignedLeftWithTypedText';
+// export { default as PromptLoanCalc } from './PromptLoanCalc';
+export { default as FeaturesHomeLoans } from './FeaturesHomeLoans';
+export { default as FeaturesOtherLoans } from './FeaturesOtherLoans';

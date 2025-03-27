@@ -1,0 +1,15 @@
+export { default as About } from './About';
+// export { default as Advantages } from './2Advantages';
+// export { default as Features } from './Features';
+// export { default as Integrations } from './Integrations';
+// export { default as Reviews } from './Reviews';
+// export { default as Team } from './Team';
+// export { default as VideoSection } from './VideoSection';
+// export { default as ListWithVerticalLine } from './ListWithVerticalLine';
+// export { default as WithHighlightedCard } from './WithHighlightedCard';
+// export { default as WithLargeImagesAndSocialIcons } from './WithLargeImagesAndSocialIcons';
+// export { default as FeatureCardsWithColorfullIconsAndLearnMoreLink } from './FeatureCardsWithColorfullIconsAndLearnMoreLink';
+// export { default as PromptLoanCalc } from './PromptLoanCalc';
+// export { default as CtaAlignedLeftWithTypedText } from './CtaAlignedLeftWithTypedText';
+// export { default as FAQContent } from './FAQContent';
+export {default as SimpleCentered} from './SimpleCentered';

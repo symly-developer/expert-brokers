@@ -1,0 +1,10 @@
+export { default as Hero } from './Hero';
+export { default as Story } from './Story';
+export { default as WhoWeAre } from './WhoWeAre';
+export { default as Application } from './Application';
+export { default as HeroWithPrimaryBackgroundAndDesktopScreenshot } from './HeroWithPrimaryBackgroundAndDesktopScreenshot';
+export { default as Naitik } from './Naitik';
+export { default as Abbas } from './Abbas';
+export { default as Priyank } from './Priyank';
+export { default as Dwight } from './Dwight';
+export { default as Mary } from './Mary';
