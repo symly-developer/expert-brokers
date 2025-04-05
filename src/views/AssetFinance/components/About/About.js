@@ -16,12 +16,12 @@ const Hero = () => {
   const LeftSide = () => (
     <Box>
       <Box marginBottom={2}>
-        <Typography component={'span'} variant="h3" sx={{ fontWeight: 700 }}>
-          Get you {' '}
+        <Typography color={'primary.contrastText'} component={'span'} variant="h3" sx={{ fontWeight: 700 }}>
+          Get your {' '}
           <Typography
             component={'span'}
             variant={'inherit'}
-            color={'primary'}
+            color={'secondary'}
             sx={{
               background: `linear-gradient(180deg, transparent 82%, ${alpha(
                 theme.palette.secondary.main,
@@ -33,7 +33,7 @@ const Hero = () => {
           </Typography>
         </Typography>
       </Box>
-      <Typography variant="h6" component="p" color={'text.secondary'}>
+      <Typography variant="h6" component="p" color={'primary.contrastText'}>
         Asset finance is a type of finance used by businesses to obtain the equipment they need to grow. It usually involves paying a regular charge for use of the asset over an agreed period of time, thus avoiding the full cost of buying outright. Asset finance can be used to obtain most types of assets, including vehicles, plant and machinery, commercial equipment, technology and more.
       </Typography>
       
@@ -81,13 +81,13 @@ const Hero = () => {
                 left={'12%'}
                 width={'76%'}
                 height={'83%'}
-                border={`1px solid ${theme.palette.alternate.dark}`}
+                border={`1px solid ${theme.palette.primary.dark}`}
                 zIndex={3}
               >
                 <Box
                   component={'img'}
                   loading="lazy"
-                  src="https://assets.cashcapital.com.au/otherloans/asset-finance.jpg"
+                  src="https://assets.expertbrokers.com.au/assetfinance.webp"
                   alt="Image Description"
                   width={1}
                   height={1}

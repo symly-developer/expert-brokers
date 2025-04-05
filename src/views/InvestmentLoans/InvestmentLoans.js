@@ -25,7 +25,7 @@ import {
 const InvestmentLoans = () => {
   const theme = useTheme();
   return (
-    <Main>
+    <Main colorInvert={true}>
       {/* <Helmet
         title="Investment Loans at Cash Capital"
         description="Get investment loans with Cash Capital. We are the best in the business when it comes to investment loans."
@@ -40,7 +40,7 @@ const InvestmentLoans = () => {
       <Box
         sx={{
           backgroundColor: theme.palette.alternate.main,
-          backgroundImage: `linear-gradient(120deg, ${theme.palette.background.paper} 0%, ${theme.palette.alternate.main} 100%)`,
+          backgroundImage: `linear-gradient(120deg, ${theme.palette.primary.main} 0%, ${theme.palette.primary.light} 100%)`,
           position: 'relative',
           marginTop: -13,
           paddingTop: 13,
@@ -87,7 +87,7 @@ const InvestmentLoans = () => {
       
       <GoogleReviews />
       <Divider />
-      <OurTeam />
+      {/* <OurTeam /> */}
 
       <PromptLoanCalc />
       <VerticallyAlignedBlogCardOverlappedWithDescriptionBox />

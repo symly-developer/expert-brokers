@@ -16,12 +16,12 @@ const Hero = () => {
   const LeftSide = () => (
     <Box>
       <Box marginBottom={2}>
-        <Typography component={'span'} variant="h3" sx={{ fontWeight: 700 }}>
+        <Typography color={'primary.contrastText'}  component={'span'} variant="h3" sx={{ fontWeight: 700 }}>
           {' '}
           <Typography
             component={'span'}
             variant={'inherit'}
-            color={'primary'}
+            color={'secondary'}
             sx={{
               background: `linear-gradient(180deg, transparent 82%, ${alpha(
                 theme.palette.secondary.main,
@@ -33,7 +33,7 @@ const Hero = () => {
           </Typography>
         </Typography>
       </Box>
-      <Typography variant="h6" component="p" color={'text.secondary'}>
+      <Typography variant="h6" component="p" color={'primary.contrastText'} >
       We can help you use the money in your Self-Managed Superannuation Fund to buy residential and commercial property. We can also help you refinance your existing SMSF loan to get a better deal. We have access to a range of lenders who offer SMSF loans, so we can help you find the right loan for your needs.
       </Typography>
       
@@ -87,7 +87,7 @@ const Hero = () => {
                 <Box
                   component={'img'}
                   loading="lazy"
-                  src="https://assets.cashcapital.com.au/otherloans/smsf-loan.jpg"
+                  src="https://assets.expertbrokers.com.au/smsfloan.webp"
                   alt="Image Description"
                   width={1}
                   height={1}

@@ -9,7 +9,10 @@ import Grid from '@mui/material/Grid';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import { useTheme } from '@mui/material/styles';
-import {post} from '@aws-amplify/api-rest';
+import { generateClient } from "aws-amplify/api";
+const client = generateClient();
+
+// import {post} from '@aws-amplify/api-rest';
 
 import Container from 'components/Container';
 
@@ -60,7 +63,18 @@ const Contact = () => {
     const onSubmit = (values, { setSubmitting, resetForm }) => {
       // return values;
       
-      handleContactNow(values);
+      client.queries.sayHello({
+        name: values.firstName + ' ' + values.lastName,
+        email: values.email,
+        phone: values.mobile,
+        message: values.message,
+      })
+        .then((response) => {
+            console.log("Response:", response.data);
+        })
+        .catch((error) => {
+            console.error("Error:", error);
+        });
       setTimeout(() => {
         // Reset form values to initial state
         resetForm();
@@ -78,27 +92,7 @@ const Contact = () => {
       onSubmit,
     });
 
-    async function handleContactNow(values) {
-      console.log(values);
-      try {
-        const restOperation =  post({
-          apiName: 'cashcapitalgeneralapis',
-          path: '/submitcontactform',
-          options: {
-            body: values,
-          }
-        });
     
-        const { body } = await restOperation.response;
-        const response = await body.json();
-    
-        console.log('POST call succeeded');
-        console.log(response);
-      } catch (e) {
-        // console.log('POST call failed: ', JSON.parse(e.response.body));
-        console.log('POST call failed: ', e.response.body);
-      }
-    }
 
     return (
       <Box>
@@ -225,7 +219,7 @@ const Contact = () => {
                     By clicking on "submit" you agree to our{' '}
                     <Box
                       component="a"
-                      href=""
+                      href="/company-terms"
                       color={theme.palette.text.primary}
                       fontWeight={'700'}
                     >
@@ -234,7 +228,7 @@ const Contact = () => {
                     ,{' '}
                     <Box
                       component="a"
-                      href=""
+                      href="/company-terms"
                       color={theme.palette.text.primary}
                       fontWeight={'700'}
                     >
@@ -243,7 +237,7 @@ const Contact = () => {
                     and{' '}
                     <Box
                       component="a"
-                      href=""
+                      href="/company-terms"
                       color={theme.palette.text.primary}
                       fontWeight={'700'}
                     >
@@ -270,7 +264,7 @@ const Contact = () => {
         marginHeight={0}
         marginWidth={0}
         scrolling="no"
-        src="https://maps.google.com/maps?width=100%&height=100%&hl=en&q=9/758 Blackburn Road Clayton VIC 3168&ie=UTF8&t=&z=14&iwloc=B&output=embed"
+        src="https://maps.google.com/maps?width=100%&height=100%&hl=en&q=22 Surround Circuit Bonnie Brook VIC 3335&ie=UTF8&t=&z=14&iwloc=B&output=embed"
         style={{
           minHeight: 300,
           filter:

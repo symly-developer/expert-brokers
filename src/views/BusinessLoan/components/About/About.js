@@ -16,12 +16,12 @@ const Hero = () => {
   const LeftSide = () => (
     <Box>
       <Box marginBottom={2}>
-        <Typography component={'span'} variant="h3" sx={{ fontWeight: 700 }}>
+        <Typography color={'primary.contrastText'} component={'span'} variant="h3" sx={{ fontWeight: 700 }}>
           Expand your business with {' '}
           <Typography
             component={'span'}
             variant={'inherit'}
-            color={'primary'}
+            color={'secondary'}
             sx={{
               background: `linear-gradient(180deg, transparent 82%, ${alpha(
                 theme.palette.secondary.main,
@@ -33,7 +33,7 @@ const Hero = () => {
           </Typography>
         </Typography>
       </Box>
-      <Typography variant="h6" component="p" color={'text.secondary'}>
+      <Typography variant="h6" component="p" color={'primary.contrastText'}>
         Whether you’re looking to expand your business, purchase equipment, or simply need some extra working capital, we’re here to help. Our business loans are designed to provide you with the financial support you need to reach your goals, so you can focus on what you do best – running your business.
       </Typography>
       
@@ -87,7 +87,7 @@ const Hero = () => {
                 <Box
                   component={'img'}
                   loading="lazy"
-                  src="https://assets.cashcapital.com.au/otherloans/business-loan.jpg"
+                  src="https://assets.expertbrokers.com.au/businessloan.webp"
                   alt="Image Description"
                   width={1}
                   height={1}

@@ -26,7 +26,7 @@ import {
 const LoanRefinance = () => {
   const theme = useTheme();
   return (
-    <Main>
+    <Main colorInvert={true}>
       {/* <Helmet
         title="Loan Refinance at Cash Capital"
         description="Refinance your loan with Cash Capital. We are the best in the business when it comes to loan refinancing."
@@ -41,7 +41,7 @@ const LoanRefinance = () => {
       <Box
         sx={{
           backgroundColor: theme.palette.alternate.main,
-          backgroundImage: `linear-gradient(120deg, ${theme.palette.background.paper} 0%, ${theme.palette.alternate.main} 100%)`,
+          backgroundImage: `linear-gradient(120deg, ${theme.palette.primary.main} 0%, ${theme.palette.primary.light} 100%)`,
           position: 'relative',
           marginTop: -13,
           paddingTop: 13,
@@ -85,7 +85,7 @@ const LoanRefinance = () => {
       
       <GoogleReviews />
       <Divider />
-      <OurTeam />
+      {/* <OurTeam /> */}
 
       
       <PromptLoanCalc />

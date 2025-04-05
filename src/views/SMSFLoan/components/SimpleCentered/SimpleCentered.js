@@ -121,7 +121,7 @@ const SimpleCentered = () => {
             </Typography>
             <Typography
               variant="h6"
-              component="p"
+              component="h6"
               color="text.secondary"
               sx={{ fontWeight: 400 }}
               align={'left'}

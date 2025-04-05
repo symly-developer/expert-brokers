@@ -16,13 +16,13 @@ const Goby = () => {
         // align={'left'}
         gutterBottom
         sx={{
-          fontWeight: 500,
-          color: '#f5d783',
-          textShadow: '3px 3px 5px rgba(0, 0, 0, 0.5)',
+          fontWeight: 700,
+          color: 'primary.contrastText',
+          textShadow: '5px 5px 5px rgba(0, 0, 0, 0.5)',
           textTransform: 'uppercase',
         }}
 
-        className='w3-light-grey w3-opacity-min'
+        // className='w3-light-grey w3-opacity-min'
         
       >
         Nishi Sharma
@@ -30,16 +30,16 @@ const Goby = () => {
       <Typography
         variant="h6"
         component="p"
-        color="text.primary"
+        color="primary.contrastText"
         // align={'left'}
         sx={{
           fontWeight: 500,
-          color: '#f5d783',
+          // color: '#f5d783',
           textShadow: '3px 3px 5px rgba(0, 0, 0, 0.5)',
           // textTransform: 'uppercase',
           width: { xs: '100%', sm: '100%', md: '70%', lg: '70%' },
         }}
-        className='w3-light-grey w3-opacity-min'
+        // className='w3-light-grey w3-opacity-min'
       >
         The founder of Expert Brokers and a trusted name in mortgage and lending solutions. Known for her warm, client-focused approach, she brings a rare blend of deep industry knowledge and genuine care to every client interaction.
         <br /> <br />

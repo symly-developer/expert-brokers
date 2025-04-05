@@ -5,7 +5,7 @@ import Button from '@mui/material/Button';
 import { alpha, useTheme } from '@mui/material/styles';
 import MenuIcon from '@mui/icons-material/Menu';
 
-import { NavItem } from './components';
+import { NavItem, ServicesNavItems } from './components';
 import { Typography } from '@mui/material';
 import ThemeModeToggler from 'components/ThemeModeToggler';
 
@@ -15,8 +15,9 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
   const { mode } = theme.palette;
   const {
     
-    homeloans: homeloansPages,
-    otherloans: otherloansPages,
+    services: servicePages,
+    // homeloans: homeloansPages,
+    // otherloans: otherloansPages,
     calculators: calculatorsPages,
     about: aboutusPages,
     contacts: contactusPages,
@@ -51,24 +52,25 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
       <Box sx={{ display: { xs: 'none', md: 'flex' } }} alignItems={'center'}>
       
         <Box marginLeft={4}>
+        
           <NavItem
-            title={'Home Loans'}
+            title={'Services'}
             id={'homeloans-pages'}
-            items={homeloansPages}
+            items={servicePages}
             colorInvert={colorInvert}
           />
         </Box>
-        <Box marginLeft={4}>
+        {/* <Box marginLeft={4}>
           <NavItem
             title={'Other Loans'}
             id={'otherloans-pages'}
             items={otherloansPages}
             colorInvert={colorInvert}
           />
-        </Box>
+        </Box> */}
         <Box marginLeft={4}>
           <NavItem
-            title={'Calculators'}  
+            title={'Knowledge Centre'}  
             id={'calculators-pages'}
             items={calculatorsPages}
             colorInvert={colorInvert}

@@ -2,10 +2,10 @@
 
 import React from 'react';
 
-import  Startup from 'views/Startup';
+import  NextHomeLoans from 'views/NextHomeLoans';
 
 const IndexPage = () => {
-  return <Startup />;
+  return <NextHomeLoans />;
 };
 
 export default IndexPage;

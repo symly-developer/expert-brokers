@@ -2,10 +2,10 @@
 
 import React from 'react';
 
-import  Startup from 'views/Startup';
+import  SMSFLoan from 'views/SMSFLoan';
 
 const IndexPage = () => {
-  return <Startup />;
+  return <SMSFLoan />;
 };
 
 export default IndexPage;

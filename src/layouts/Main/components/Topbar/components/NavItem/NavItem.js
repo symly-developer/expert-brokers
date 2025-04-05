@@ -90,7 +90,7 @@ const NavItem = ({ title, id, items, colorInvert = false }) => {
         }}
         sx={{
           '.MuiPaper-root': {
-            maxWidth: items.length > 12 ? 350 : 250,
+            maxWidth: items.length > 6 ? 350 : 250,
             padding: 1,
             marginTop: 2,
             borderTopRightRadius: 0,
@@ -106,7 +106,7 @@ const NavItem = ({ title, id, items, colorInvert = false }) => {
       >
         <Grid container spacing={0.5}>
           {items.map((p, i) => (
-            <Grid item key={i} xs={items.length > 12 ? 6 : 12}>
+            <Grid item key={i} xs={items.length > 6 ? 6 : 12}>
               <MenuItem
                 component={'a'}
                 href={p.href}

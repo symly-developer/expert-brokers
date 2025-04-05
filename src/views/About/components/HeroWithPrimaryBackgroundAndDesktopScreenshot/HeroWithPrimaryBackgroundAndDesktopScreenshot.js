@@ -39,7 +39,7 @@ const HeroWithPrimaryBackgroundAndDesktopScreenshot = () => {
                 component="p"
                 sx={{ color: 'common.white' }}
               >
-                Cash Capital is a team of experienced mortgage finance professionals with a proven track record of delivering expert guidance and tailored solutions.
+                Expert Brokers is a trusted mortgage and finance brokerage, known for delivering expert guidance and tailored solutions with a proven track record of success.
               </Typography>
               
             </Box>

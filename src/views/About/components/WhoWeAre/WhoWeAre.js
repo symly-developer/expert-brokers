@@ -27,8 +27,8 @@ const WhoWeAre = () => {
             <Typography variant={'h4'} gutterBottom sx={{ fontWeight: 700 }}>
               Who are we?
             </Typography>
-            <Typography component={'p'} color={'text.secondary'}>
-            We are the experts who simplify your mortgage journey. At Cash Capital, we craft financial solutions designed around your goals. With deep industry knowledge and a focus on trust, we guide individuals and businesses to secure the right loans—whether for a home, business growth, or personal needs. We’re here to turn your financial aspirations into reality.
+            <Typography variant='body' component={'p'} color={'text.secondary'}>
+            We’re not just finance professionals — we’re storytellers of your success. At Expert Brokers, we exist to make your financial journey smoother, smarter, and more human. From the outside, we help with loans. But at our core, we build trust, remove complexity, and give you the confidence to move forward with your dreams. Whether you’re a first-home buyer, a growing business, or someone looking for clarity in a complex space, we’re here — not just to provide options, but to stand by you with insight, integrity, and care.
             </Typography>
           </Box>
         </Grid>
@@ -44,8 +44,13 @@ const WhoWeAre = () => {
             <Typography variant={'h4'} gutterBottom sx={{ fontWeight: 700 }}>
               Our process
             </Typography>
-            <Typography component={'p'} color={'text.secondary'}>
-              At <b>Cash Capital</b>, we guide you through a smooth and structured process designed to simplify your mortgage journey. It starts with a simple conversation where we understand your goals and explore opportunities. From there, we research and compare options from over 60 lenders to find the best solutions for your needs. We handle all the paperwork, secure your pre-approval, and determine your borrowing capacity, ensuring you have a clear plan moving forward. Throughout the process, we provide continuous updates, keeping you informed every step of the way!
+            <Typography variant='body' component={'p'} color={'text.secondary'}>
+            At Expert Brokers, we believe getting the right loan should feel simple, not stressful. Our process is built around clarity, care, and convenience—so you always know what’s happening and what comes next.
+            <br /> <br />
+            It all begins with a friendly chat where we listen closely to understand your goals, whether it’s buying a new home, refinancing, or funding a business. From there, we dive into our network of trusted lenders to compare the most competitive and suitable loan options tailored to your needs.
+            <br />
+            We take care of the details—from assessing your borrowing capacity and organising pre-approvals, to managing the paperwork and staying on top of deadlines. You’ll receive regular updates along the way, with clear communication and expert guidance at every stage.
+
             </Typography>
           </Box>
         </Grid>

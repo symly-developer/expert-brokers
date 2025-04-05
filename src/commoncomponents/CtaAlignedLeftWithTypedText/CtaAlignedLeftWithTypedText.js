@@ -24,8 +24,8 @@ const CtaAlignedLeftWithTypedText = () => {
             fontWeight: 700,
           }}
         >
-          Your Goals {' '}
-          <Typography color={theme.palette.primary.fix} component={'span'} variant={'inherit'}>
+          Your Goals {' | '}
+          <Typography color={theme.palette.primary.light} component={'span'} variant={'inherit'}>
             Our Expertise
           </Typography>
         </Typography>

@@ -2,10 +2,10 @@
 
 import React from 'react';
 
-import  Startup from 'views/Startup';
+import  StampDutyCalc from 'views/StampDutyCalc';
 
 const IndexPage = () => {
-  return <Startup />;
+  return <StampDutyCalc />;
 };
 
 export default IndexPage;

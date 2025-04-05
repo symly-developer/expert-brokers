@@ -27,7 +27,7 @@ const Hero = () => {
       data-jarallax
       data-speed="0.2"
       position={'relative'}
-      minHeight={{ xs: 400, sm: 500, md: 600 }}
+      minHeight={{ xs: 400, sm: 500, md: 700 }}
       display={'flex'}
       alignItems={'center'}
       justifyContent={'center'}
@@ -45,15 +45,15 @@ const Hero = () => {
           fontFamily: 'object-fit: cover;',
           top: 0,
           left: 0,
-          width: '100%',
-          height: '100%',
+          width: '80%',
+          // height: '100%',
         
           zIndex: -1,
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
           backgroundPosition: 'center center',
           backgroundImage:
-            'url(https://assets.cashcapital.com.au/about-us/about-us-hero.jpg)',
+            'url(https://assets.expertbrokers.com.au/about-us-hero2.webp)',
         }}
       />
       {/* Background image for medium screens */}
@@ -74,7 +74,7 @@ const Hero = () => {
           backgroundSize: 'cover',
           backgroundPosition: 'center center',
           backgroundImage:
-            'url(https://assets.cashcapital.com.au/about-us/about-us-hero.jpg)',
+            'url(https://assets.expertbrokers.com.au/about-us-hero2.webp)',
         }}
       />
       {/* Background image for small screens */} 
@@ -89,13 +89,13 @@ const Hero = () => {
           left: 0,
           width: '100%',
           height: '100%',
-        
+          
           zIndex: -1,
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
           backgroundPosition: 'center center',
           backgroundImage:
-            'url(https://assets.cashcapital.com.au/about-us/about-us-hero-small.jpg)',
+            'url(https://assets.expertbrokers.com.au/about-us-hero2.webp)',
         }}
       />
       <Box
@@ -108,7 +108,7 @@ const Hero = () => {
           bottom: 0,
           width: 1,
           height: 1,
-          background: alpha('#161c2d', 0.4),
+          background: alpha('#161c2d', 0.6),
           zIndex: 1,
           
         }}
@@ -128,7 +128,7 @@ const Hero = () => {
             About us
           </Typography>
           <Typography
-            variant="h6"
+            variant="h5"
             component="p"
             color="text.primary"
             sx={{
@@ -136,7 +136,7 @@ const Hero = () => {
             }}
             align='center'
           >
-            Empowering your financial journey with expert mortgage solutions and over 20 years of trusted experience
+            More than just loans — we’re your trusted partners in building a secure financial future.
           </Typography>
         </Box>
       </Container>

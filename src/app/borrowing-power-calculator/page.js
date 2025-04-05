@@ -2,10 +2,10 @@
 
 import React from 'react';
 
-import  Startup from 'views/Startup';
+import  BorrowingPowerCalculator from 'views/BorrowingPowerCalculator';
 
 const IndexPage = () => {
-  return <Startup />;
+  return <BorrowingPowerCalculator />;
 };
 
 export default IndexPage;

@@ -15,7 +15,8 @@ export const light = {
 
   primary: {
     main: 'rgba(9, 40, 103, 0.99)',
-    light: 'rgba(20, 88, 214, 0.99)',
+    light: 'rgba(67, 122, 226, 0.99)',
+    ultralight: 'rgba(150, 178, 231, 0.99)',
     dark: 'rgba(11, 23, 47, 0.99)',
     contrastText: '#fff',
     fix: 'rgba(20, 88, 214, 0.99)',
@@ -61,9 +62,10 @@ export const dark = {
     main: '#ffffff',
   },
   primary: {
-    light: '#ffb74d',
+    light: 'rgba(50, 61, 81, 0.99)',
     main: '#f9b934',
     dark: '#FF9800',
+    ultralight: 'rgba(150, 178, 231, 0.99)',
     contrastText: '#fff',
     fix: '#ffffff',
   },

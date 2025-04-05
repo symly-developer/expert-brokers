@@ -35,7 +35,7 @@ const CalcText = () => {
             <br /><br />
             By working with a broker, you can get a more precise repayment figure and tailor your home loan to your needs. They can help you explore strategies to reduce interest payments and optimize your mortgage setup. Having professional guidance ensures that you secure a loan that aligns with your budget and long-term financial plans.
             <br /><br />
-            At Cash Capital, our team of mortgage brokers can assist you in navigating the complexities of home loans. We provide expert advice and personalized solutions to help you achieve your property ownership goals. Contact us today to learn more about our services and how we can help you secure the right loan.
+            At Expert Brokers, our team of mortgage brokers can assist you in navigating the complexities of home loans. We provide expert advice and personalized solutions to help you achieve your property ownership goals. Contact us today to learn more about our services and how we can help you secure the right loan.
           </Typography>
         </Box>
         <CtaAlignedLeftWithTypedText />

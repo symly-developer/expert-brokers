@@ -2,10 +2,10 @@
 
 import React from 'react';
 
-import  Startup from 'views/Startup';
+import  About from 'views/About';
 
 const IndexPage = () => {
-  return <Startup />;
+  return <About />;
 };
 
 export default IndexPage;

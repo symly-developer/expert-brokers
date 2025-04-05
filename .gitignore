@@ -35,3 +35,9 @@ yarn-error.log*
 
 .eslintcache
 .vscode
+
+# amplify
+node_modules
+.amplify
+amplify_outputs*
+amplifyconfiguration*

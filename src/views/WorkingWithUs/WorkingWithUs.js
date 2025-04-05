@@ -53,7 +53,7 @@ const Pricing = () => {
       </Container>
       
       {/* The below components are refereced from the Startup Folder  */}
-      <PromptLoanCalc/> 
+      {/* <PromptLoanCalc/>  */}
       <Container>
         <WhyUs />
       </Container>
@@ -66,7 +66,7 @@ const Pricing = () => {
       <Divider />
       
       <FeaturesHomeLoans />
-      <FeaturesOtherLoans />
+      {/* <FeaturesOtherLoans /> */}
       <VerticallyAlignedBlogCardOverlappedWithDescriptionBox />
       <CtaAlignedLeftWithTypedText />  
       

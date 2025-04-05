@@ -16,12 +16,12 @@ const Hero = () => {
   const LeftSide = () => (
     <Box>
       <Box marginBottom={2}>
-        <Typography component={'span'} variant="h3" sx={{ fontWeight: 700 }}>
+        <Typography color={'primary.contrastText'}  component={'span'} variant="h3" sx={{ fontWeight: 700 }}>
           {'PLanning to buy?'}
           <Typography
             component={'span'}
             variant={'inherit'}
-            color={'primary'}
+            color={'secondary'}
             sx={{
               background: `linear-gradient(180deg, transparent 82%, ${alpha(
                 theme.palette.secondary.main,
@@ -33,7 +33,7 @@ const Hero = () => {
           </Typography>
         </Typography>
       </Box>
-      <Typography variant="h6" component="p" color={'text.secondary'}>
+      <Typography variant="h6" component="p" color={'primary.contrastText'} >
       A pre-approval is a conditional approval that is given to you by a lender. It is based on the information you provide to the lender. It can be really useful when you are looking to buy a property and want to be sure that you can borrow the amount you need.
       </Typography>
       
@@ -87,7 +87,7 @@ const Hero = () => {
                 <Box
                   component={'img'}
                   loading="lazy"
-                  src="https://assets.cashcapital.com.au/home-loans/Homeloan-BG-1.jpg"
+                  src="https://assets.expertbrokers.com.au/preapproval.webp"
                   alt="Image Description"
                   width={1}
                   height={1}

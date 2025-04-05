@@ -33,12 +33,12 @@ const ContactCard = () => {
           contact us.
         </Typography>
         <Typography variant={'subtitle2'}>
-          abbas.k@cashcapital.com.au
+         nishisharma@expertbrokers.com.au
           <br />
           <b>Address:</b> <br />
-          9/758 Blackburn Road, 
+          22 Surround Circuit
           <br />
-          Clayton VIC 3168
+          Bonnie Brook VIC 3335
           <br />
           Australia
         </Typography>

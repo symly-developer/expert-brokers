@@ -142,9 +142,8 @@ const Hero = () => {
                 align='center'
               >
                 <b>Address:</b> <br />
-                Unit 9, <br />
-                758 Blackburn Road <br />
-                Clayton VIC - 3168 <br />
+                22 Surround Circuit <br />
+                Bonnie Brook VIC 3335 <br />
               </Typography>
             </Grid>
             <Grid item lg={6} md={6}  sm={12}  xs={12}>
@@ -157,8 +156,8 @@ const Hero = () => {
                 }}
                 align='center'
               >
-                <b>Phone:</b> 0435 134 121 <br />
-                <b>Email:</b> info@cashcapital.com.au <br />
+                <b>Phone:</b> +61 401 809 852 <br />
+                <b>Email:</b> nishisharma@expertbrokers.com.au <br />
               </Typography>
             </Grid>
           </Grid>

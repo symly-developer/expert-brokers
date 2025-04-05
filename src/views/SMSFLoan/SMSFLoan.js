@@ -21,7 +21,7 @@ import {
 const SMSFLoan = () => {
   const theme = useTheme();
   return (
-    <Main>
+    <Main colorInvert={true}>
       {/* <Helmet
         title="Brkers specialising in SMSF loans"
         description="We are the best in the business when it comes to SMSF loans. We have the best brokers in the business."
@@ -36,7 +36,7 @@ const SMSFLoan = () => {
       <Box
         sx={{
           backgroundColor: theme.palette.alternate.main,
-          backgroundImage: `linear-gradient(120deg, ${theme.palette.background.paper} 0%, ${theme.palette.alternate.main} 100%)`,
+          backgroundImage: `linear-gradient(120deg, ${theme.palette.primary.main} 0%, ${theme.palette.primary.light} 100%)`,
           position: 'relative',
           marginTop: -13,
           paddingTop: 13,
@@ -88,7 +88,7 @@ const SMSFLoan = () => {
       <GoogleReviews />
       <Divider />
      
-      <OurTeam />
+      {/* <OurTeam /> */}
 
       <VerticallyAlignedBlogCardOverlappedWithDescriptionBox /> 
       

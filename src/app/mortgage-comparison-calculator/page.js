@@ -2,10 +2,10 @@
 
 import React from 'react';
 
-import  Startup from 'views/Startup';
+import  MortgageComparisonCalc from 'views/MortgageComparisonCalc';
 
 const IndexPage = () => {
-  return <Startup />;
+  return <MortgageComparisonCalc />;
 };
 
 export default IndexPage;

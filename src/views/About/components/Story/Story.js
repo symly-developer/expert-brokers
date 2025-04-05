@@ -20,13 +20,14 @@ const Story = () => {
             <Typography variant={'h4'} gutterBottom sx={{ fontWeight: 700 }}>
               Our story
             </Typography>
-            <Typography component={'p'}>
-              We are a team of experienced mortgage finance professionals with a proven track record of delivering expert guidance and tailored solutions to our clients. With over 20 years of experience in the industry, we have established ourselves as a trusted and reliable partner for individuals and businesses seeking home loans, commercial loans, personal loans and Self-Managed Super Fund (SMSF) lending.
+            <Typography variant='body' component={'p'}>
+            At Expert Brokers, our journey began with a simple belief: everyone deserves the right guidance to achieve their financial dreams.
               <br /> <br />
-              Our team is comprised of seasoned professionals who possess a deep understanding of the complex and ever-evolving mortgage landscape. We take the time to listen to our clients' unique needs and goals, providing personalized advice and recommendations to help them achieve their financial objectives. Whether you're a first-time homebuyer, a seasoned investor, or a business owner looking to expand, we have the expertise and resources to help you navigate the mortgage process with confidence.
+              Founded by <b>Nishi Sharma</b>, who brings over <b> 25 years of experience </b>in the finance industry, Expert Brokers was born from a desire to do things differently. After helping thousands of individuals and businesses navigate the complex world of loans, Nishi saw a gap — people weren’t just looking for brokers; they were looking for someone who genuinely cared.
+
               <br />
               <br />
-              With a commitment to exceptional customer service, transparency, and integrity, we have built long-standing relationships with our clients and partners. Our goal is to provide innovative and effective financing solutions that empower our clients to achieve their dreams and secure their financial futures.
+              That’s why Expert Brokers is more than just a mortgage and finance broking service. We exist to support, empower, and simplify the lending journey for our clients. Every loan we arrange is tied to something bigger—a home filled with memories, a business ready to grow, a dream being built.
             </Typography>
           </Box>
         </Grid>
@@ -42,9 +43,10 @@ const Story = () => {
             <Box
               component={'img'}
               src={
-                'https://assets.cashcapital.com.au/about-us/about-us-intro.jpg'
+                'https://assets.expertbrokers.com.au/about-us-intro1.webp'
               }
               width={1}
+              className='w3-round-large'
               height={1}
               sx={{
                 filter:

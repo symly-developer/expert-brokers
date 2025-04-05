@@ -2,10 +2,10 @@
 
 import React from 'react';
 
-import  Startup from 'views/Startup';
+import  ConstructionLoan from 'views/ConstructionLoan';
 
 const IndexPage = () => {
-  return <Startup />;
+  return <ConstructionLoan />;
 };
 
 export default IndexPage;

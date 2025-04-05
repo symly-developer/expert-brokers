@@ -16,7 +16,7 @@ const HeroWithPrimaryBackgroundAndDesktopScreenshot = () => {
       sx={{
         backgroundColor:
           theme.palette.mode === 'light'
-            ? theme.palette.primary.main
+            ? theme.palette.primary.light
             : theme.palette.alternate.main,
       }}
     >

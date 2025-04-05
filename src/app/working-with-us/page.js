@@ -2,10 +2,10 @@
 
 import React from 'react';
 
-import  Startup from 'views/Startup';
+import  WorkingWithUs from 'views/WorkingWithUs';
 
 const IndexPage = () => {
-  return <Startup />;
+  return <WorkingWithUs />;
 };
 
 export default IndexPage;

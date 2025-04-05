@@ -14,32 +14,32 @@ import Container from 'components/Container';
 
 const mock = [
   {
-    image: 'https://assets.cashcapital.com.au/blog/cashcapital-banners-dec-commercial_banner-1-01.png',
+    image: 'https://assets.expertbrokers.com.au/blog-1.webp',
     description:
-      'Learn how to effectively manage your personal finances in the short and long term.',
-    title: 'How to prepare for buying an investment property',
+      'When it comes to buying a home, getting your home loan approved quickly can make all the difference. In today’s competitive property market, delays in finance can mean missing out on your dream home. Whether you are a first-home buyer, refinancing, or looking to invest, having your application in top shape can speed up the process and improve your chances of success. Here are our top tips to help you get your home loan approved faster and with greater confidence.',
+    title: 'Top 10 Tips to Get Your Home Loan Approved Faster',
     author: {
-      name: 'Naitik Shah',
+      name: 'Nishi Sharma',
       avatar: '',
     },
     date: '10 Sep',
   },
   {
-    image: 'https://assets.cashcapital.com.au/blog/girl-enjoying-her-favorite-tv-show-at-home-jpg_s-1024x1024-w-is-k-20-c-gi0hbab8ahjn_oayrlzuqijtzax6xxjhlpmtnqnekns.jpg',
-    description: 'Get to know how can you purchase a car through finance',
-    title: 'The pros and cons of paying LMI',
+    image: 'https://assets.expertbrokers.com.au/blog-2.webp',
+    description: 'When considering a home loan in Australia, one of the most critical decisions you’ll face is choosing between a fixed or variable interest rate. This choice can significantly impact your financial stability and flexibility throughout the life of your loan. Understanding the nuances of both options is essential to align your mortgage with your financial goals and risk tolerance.',
+    title: 'Fixed vs Variable Home Loans: What’s Right for You?',
     author: {
-      name: 'Abbas K',
+      name: 'Nishi Sharma',
       avatar: '',
     },
     date: '02 Aug',
   },
   {
-    image: 'https://assets.cashcapital.com.au/blog/cashcapital-banners-dec-commercial_banner-3-03.png',
-    description:'Get to know how can you purchase a car through finance',
-    title: 'Four different ways to finance a car purchase',
+    image: 'https://assets.expertbrokers.com.au/blog-3.webp',
+    description:'As of April 2025, the Reserve Bank of Australia (RBA) has held the cash rate steady at 4.35%, marking nearly a year since the last rate increase. With interest rates at their highest levels in over a decade, homeowners, investors, and first-home buyers are all asking the same question: what does this mean for me?',
+    title: 'What the RBA Interest Rate Decision Means for Homeowners and Buyers in 2025',
     author: {
-      name: 'Priyank Dubey',
+      name: 'Nishi Sharma',
       avatar: '',
     },
     date: '05 Mar',
@@ -49,7 +49,7 @@ const mock = [
 const VerticallyAlignedBlogCardOverlappedWithDescriptionBox = () => {
   const theme = useTheme();
   return (
-    <Container>
+    <Container >
       <Box>
         <Box
           display={'flex'}
@@ -69,7 +69,7 @@ const VerticallyAlignedBlogCardOverlappedWithDescriptionBox = () => {
           <Box display="flex" marginTop={{ xs: 2, md: 0 }}>
             <Box
               component={Button}
-              href='https://blog.cashcapital.com.au'
+              href='https://blog.expertbrokers.com.au'
               variant="contained"
               color="primary"
               size="large"
@@ -84,7 +84,7 @@ const VerticallyAlignedBlogCardOverlappedWithDescriptionBox = () => {
             <Grid item xs={12} md={4} key={i}>
               <Box
                 component={'a'}
-                href={'https://blog.cashcapital.com.au'}
+                href={'https://blog.expertbrokers.com.au'}
                 display={'block'}
                 width={1}
                 height={1}
@@ -107,7 +107,8 @@ const VerticallyAlignedBlogCardOverlappedWithDescriptionBox = () => {
                     image={item.image}
                     title={item.title}
                     sx={{
-                      height: { xs: 300, md: 360 },
+                      width: { xs: '100%', md: '100%' }, // 👈 Change width here
+                      height: { xs: 200, md: 260 },
                       position: 'relative',
                       filter:
                         theme.palette.mode === 'dark'

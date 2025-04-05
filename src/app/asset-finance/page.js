@@ -2,10 +2,10 @@
 
 import React from 'react';
 
-import  Startup from 'views/Startup';
+import  AssetFinance from 'views/AssetFinance';
 
 const IndexPage = () => {
-  return <Startup />;
+  return <AssetFinance />;
 };
 
 export default IndexPage;

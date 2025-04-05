@@ -2,10 +2,10 @@
 
 import React from 'react';
 
-import  Startup from 'views/Startup';
+import  ContactPageSidebarMap from 'views/ContactPageSidebarMap';
 
 const IndexPage = () => {
-  return <Startup />;
+  return <ContactPageSidebarMap />;
 };
 
 export default IndexPage;

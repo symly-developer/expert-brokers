@@ -84,7 +84,7 @@ const Startup = () => {
             display={'flex'}
             alignItems={'center'}
             id="agency__portfolio-item--js-scroll"
-            bgcolor="rgba(8, 8, 8, 0.49)" 
+            bgcolor="rgba(59, 79, 197, 0.49)" 
           >
             {/* Background Image */}
             <Box
@@ -95,7 +95,7 @@ const Startup = () => {
                 left: 0,
                 width: '100%',
                 height: '100%',
-                backgroundImage: `url('https://assets.expertbrokers.com.au/jaralax-image.webp')`,
+                backgroundImage: `url('https://assets.expertbrokers.com.au/jaralax-image2.webp')`,
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: {
@@ -113,7 +113,12 @@ const Startup = () => {
               left={0}
               width="100%"
               height="100%"
-              bgcolor="rgba(8, 8, 8, 0.58)" // adjust opacity and color as needed
+              sx={{
+                background: `linear-gradient(to right, rgba(25, 25, 25, 0.7), rgba(0, 0, 50, 0.6))`,
+                // opacity: 1,
+                // transition: 'opacity 0.3s ease-in-out',
+              }}
+              // bgcolor={ 'linear-gradient(to right, rgba(25, 25, 25, 0.7), rgba(0, 0, 50, 0.6))'}
               zIndex={1}
             />
 
@@ -139,7 +144,7 @@ const Startup = () => {
         
         
         {/* <FeaturesOtherLoans /> */}
-        {/* <VerticallyAlignedBlogCardOverlappedWithDescriptionBox /> */}
+        <VerticallyAlignedBlogCardOverlappedWithDescriptionBox />
         <Divider />
         <CtaAlignedLeftWithTypedText />          
         

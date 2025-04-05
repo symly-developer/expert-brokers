@@ -16,12 +16,12 @@ const Hero = () => {
   const LeftSide = () => (
     <Box>
       <Box marginBottom={2}>
-        <Typography component={'span'} variant="h3" sx={{ fontWeight: 700 }}>
+        <Typography color={'primary.contrastText'} component={'span'} variant="h3" sx={{ fontWeight: 700 }}>
           Fulfil your dream plans with {' '}
           <Typography
             component={'span'}
             variant={'inherit'}
-            color={'primary'}
+            color={'secondary'}
             sx={{
               background: `linear-gradient(180deg, transparent 82%, ${alpha(
                 theme.palette.secondary.main,
@@ -33,7 +33,7 @@ const Hero = () => {
           </Typography>
         </Typography>
       </Box>
-      <Typography variant="h6" component="p" color={'text.secondary'}>
+      <Typography variant="h6" component="p" color={'primary.contrastText'} >
       Whether you’re planning a dream holiday, furnishing your home, investing in a university course, or preparing for your wedding day, we’re here to turn your aspirations into reality. Whatever your goals may be, our mission is to provide the support and resources you need to make them happen smoothly and confidently, helping you create unforgettable moments along the way.
       </Typography>
       
@@ -87,7 +87,7 @@ const Hero = () => {
                 <Box
                   component={'img'}
                   loading="lazy"
-                  src="https://assets.cashcapital.com.au/otherloans/personal-loan.jpg"
+                  src="https://assets.expertbrokers.com.au/personalloan.webp"
                   alt="Image Description"
                   width={1}
                   height={1}

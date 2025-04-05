@@ -2,10 +2,10 @@
 
 import React from 'react';
 
-import  Startup from 'views/Startup';
+import  PreApproval from 'views/PreApproval';
 
 const IndexPage = () => {
-  return <Startup />;
+  return <PreApproval />;
 };
 
 export default IndexPage;

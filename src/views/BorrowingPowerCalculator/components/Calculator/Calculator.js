@@ -1,9 +1,9 @@
 import React from 'react';
 import Grid from '@mui/material/Grid';
-
-import {Form, CalcText} from './components';
+import dynamic from 'next/dynamic';
+import {CalcText} from './components';
 import Container from 'components/Container';
-
+const Form = dynamic(() => import('./components/Form'), { ssr: false });
 
 const Calculator = () => {
   return (

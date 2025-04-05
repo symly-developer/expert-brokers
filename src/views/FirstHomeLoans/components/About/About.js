@@ -16,12 +16,12 @@ const Hero = () => {
   const LeftSide = () => (
     <Box>
       <Box marginBottom={2}>
-        <Typography component={'span'} variant="h3" sx={{ fontWeight: 700 }}>
+        <Typography color={'primary.contrastText'} component={'span'} variant="h3" sx={{ fontWeight: 700 }}>
           We make it easy to secure finances for your{' '}
           <Typography
             component={'span'}
             variant={'inherit'}
-            color={'primary'}
+            color={'secondary'}
             sx={{
               background: `linear-gradient(180deg, transparent 82%, ${alpha(
                 theme.palette.secondary.main,
@@ -33,7 +33,7 @@ const Hero = () => {
           </Typography>
         </Typography>
       </Box>
-      <Typography variant="h6" component="p" color={'text.secondary'}>
+      <Typography variant="h6" component="p" color={'primary.contrastText'} >
         Buying your first home is an exciting time - but it can also be complicated - our job is to make it easy for you. We offer a range of home loan products to suit your needs. 
       </Typography>
       
@@ -87,7 +87,7 @@ const Hero = () => {
                 <Box
                   component={'img'}
                   loading="lazy"
-                  src="https://assets.cashcapital.com.au/home-loans/Homeloan-BG-1.jpg"
+                  src="https://assets.expertbrokers.com.au/firsthomeloan.webp"
                   alt="Image Description"
                   width={1}
                   height={1}

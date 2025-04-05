@@ -2,10 +2,10 @@
 
 import React from 'react';
 
-import  Startup from 'views/Startup';
+import  MortgageOffsetCalc from 'views/MortgageOffsetCalc';
 
 const IndexPage = () => {
-  return <Startup />;
+  return <MortgageOffsetCalc />;
 };
 
 export default IndexPage;

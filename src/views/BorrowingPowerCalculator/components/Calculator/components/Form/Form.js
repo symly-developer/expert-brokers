@@ -1,3 +1,4 @@
+
 /* eslint-disable react/no-unescaped-entities */
 import React, { useEffect } from 'react';
 
@@ -29,31 +30,6 @@ import { Stack } from '@mui/material';
 const Form = () => {
   
   
-  
-  // const keyToLabel = {
-  //   payment: 'Payment Made in this month',
-  //   principal: 'Principa Paid in this month',
-  //   interest: 'Interest Paid in this month',
-  //   remainingBalance: 'Remaining Principal Balance',
-  // };
-  // const chartcolors = {
-  //   payment: 'blue',
-  //   principal: 'green',
-  //   interest: 'red',
-  //   remainingBalance: 'orange',
-  // };
-  // const stackStrategy = {
-  //   stack: 'total',
-  //   area: true,
-  //   stackOffset: 'none', // To stack 0 on top of others
-  // };
-  
-  // const customize = {
-  //   height: 400,
-  //   width: 400,
-  //   // legend: { hidden: true },
-  //   margin: { top: 60, right: 20, bottom: 20, left: 70 },
-  // };
   
 
 
@@ -153,28 +129,7 @@ const Form = () => {
     }
     console.log('2. Tax', tax);
 
-    // write assync function to prepare data for chart
-
-
-
-    // const [months, setMonths] = useState([]);
-    // const [principalData, setPrincipalData] = useState([]);
-    // const [interestData, setInterestData] = useState([]);
-    // const [remainingBalanceData, setRemainingBalanceData] = useState([]);
-  
-  
-
-    // useEffect(() => {
-    //   console.log('Preparing data for chart', amortizationPlan);
-    //   setMonths(amortizationPlan.map((item) => item.month));
-    //   setPrincipalData( amortizationPlan.map((item) => parseFloat(item.principal)));
-    //   setInterestData(amortizationPlan.map((item) => parseFloat(item.interest)));
-    //   setRemainingBalanceData( amortizationPlan.map((item) =>
-    //     parseFloat(item.remainingBalance))
-    //   );
-    // }, [amortizationPlan]);
- 
-    // After-tax salary
+   
     const afterTaxSalary = grossSalary - tax;
 
     console.log('3. after tax salary', afterTaxSalary);
@@ -272,6 +227,8 @@ const Form = () => {
 
   const theme = useTheme();
   const { mode } = theme.palette;
+  const secondarycolor = theme?.palette?.secondary?.main || '#f4b942';
+  const primarycolor = theme?.palette?.primary?.light || '#3f51b5';
   
   const verticalSliderStyle = {
     display: 'inline-block',
@@ -594,19 +551,10 @@ const Form = () => {
                 label: 'Loan Term (Months)',
                 
               }]}
-              // yAxis={[{ id: 'leftAxisId', label:'Loan Balance'  }, { id: 'rightAxisId', label: 'Payment Made' }]}
-              // rightAxis={[{ id: 'rightAxisId', label: 'Payments' }]}
+              
               
               series={[
-                // {
-                //   data: amortizationPlan.map((item) =>  parseFloat(item.remainingBalance)),
-                //   label: 'Loan Balance',
-                //   // area: true,
-                //   // stack: 'total',
-                //   yAxisId: 'leftAxisId',
-                //   color: '#59a14f',
-                  
-                // },
+          
                 {
                   data: amortizationPlan.map((item) => parseFloat(item.payment)),
                   label: 'Payment Made',
@@ -623,7 +571,7 @@ const Form = () => {
                   area: true,
                   // stack: 'total',
                   // yAxisId: 'rightAxisId',
-                  color: theme.palette.primary.main,
+                  color: theme.palette.primary.light,
                   showMark: true,
                   
                 },

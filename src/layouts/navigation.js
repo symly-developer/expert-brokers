@@ -1,5 +1,60 @@
 const pages = {
 
+  services: [
+    
+    {
+      title: 'First Home Loan',
+      href: '/first-home-loan',
+    },
+    {
+      title: 'Next Home Loan',
+      href: '/next-home-loan',
+    },
+    {
+      title: 'Refinance',
+      href: '/loan-refinance',
+    },
+    {
+      title: 'Investments',
+      href: '/investment-loan',
+    },
+    {
+      title: 'Pre-Approval',
+      href: '/pre-approval',
+    },
+  
+  
+    {
+      title: 'Personal Loans',
+      href: '/personal-loan',
+    },
+    {
+      title: 'Commercial Loans',
+      href: '/commercial-loan',
+    },
+    {
+      title: 'Asset Finance',
+      href: '/asset-finance',
+    },
+    {
+      title: 'Car Loans',
+      href: '/car-loan',
+    },
+    {
+      title: 'Business Loans',
+      href: '/business-loan',
+    },
+    {
+      title: 'Construction Loans',
+      href: '/construction-loan',
+    },
+    {
+      title: 'SMSF Loans',
+      href: '/smsf-loan',
+    },
+  ],
+
+  
   homeloans: [
     {
       title: 'First Home Loan',
@@ -54,8 +109,8 @@ const pages = {
   ],
   calculators: [
     {
-      title: 'Knowledge Centre',
-      href: '/',
+      title: 'Blog',
+      href: 'https://blog.expertbrokers.com.au',
     },
     {
       title: 'Borrowing Power Calc',
@@ -84,7 +139,7 @@ const pages = {
   ],
   about: [
     {
-      title: 'Our Team',
+      title: 'About Us',
       href: '/about',
     },
     {

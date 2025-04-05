@@ -16,12 +16,12 @@ const Hero = () => {
   const LeftSide = () => (
     <Box>
       <Box marginBottom={2}>
-        <Typography component={'span'} variant="h3" sx={{ fontWeight: 700 }}>
+        <Typography color={'primary.contrastText'} component={'span'} variant="h3" sx={{ fontWeight: 700 }}>
           Build it with {' '}
           <Typography
             component={'span'}
             variant={'inherit'}
-            color={'primary'}
+            color={'secondary'}
             sx={{
               background: `linear-gradient(180deg, transparent 82%, ${alpha(
                 theme.palette.secondary.main,
@@ -33,7 +33,7 @@ const Hero = () => {
           </Typography>
         </Typography>
       </Box>
-      <Typography variant="h6" component="p" color={'text.secondary'}>
+      <Typography variant="h6" component="p" color={'primary.contrastText'} >
         We do all the legwork to match your needs to the right construction loan, saving you time, stress and hassle. We’ll help you navigate the process, so you can focus on the road ahead.
       </Typography>
       
@@ -87,7 +87,7 @@ const Hero = () => {
                 <Box
                   component={'img'}
                   loading="lazy"
-                  src="https://assets.cashcapital.com.au/otherloans/construction-loan.jpg"
+                  src="https://assets.expertbrokers.com.au/constructionloan.webp"
                   alt="Image Description"
                   width={1}
                   height={1}

@@ -16,12 +16,12 @@ const Hero = () => {
   const LeftSide = () => (
     <Box>
       <Box marginBottom={2}>
-        <Typography component={'span'} variant="h3" sx={{ fontWeight: 700 }}>
+        <Typography color={'primary.contrastText'}  component={'span'} variant="h3" sx={{ fontWeight: 700 }}>
           Start Commercial Investment with {' '}
           <Typography
             component={'span'}
             variant={'inherit'}
-            color={'primary'}
+            color={'secondary'}
             sx={{
               background: `linear-gradient(180deg, transparent 82%, ${alpha(
                 theme.palette.secondary.main,
@@ -33,7 +33,7 @@ const Hero = () => {
           </Typography>
         </Typography>
       </Box>
-      <Typography variant="h6" component="p" color={'text.secondary'}>
+      <Typography variant="h6" component="p" color={'primary.contrastText'} >
         Are you planning to purchase commercial property, invest in new business equipment, or secure funding for your business operations? Whatever your business needs may be, we’re here to guide you in selecting the right commercial loan. Our goal is to help you find a solution tailored to your financial situation, enabling you to achieve your business objectives and drive growth with confidence. Let us support you in making the right choices to move your business forward.
       </Typography>
       
@@ -87,7 +87,7 @@ const Hero = () => {
                 <Box
                   component={'img'}
                   loading="lazy"
-                  src="https://assets.cashcapital.com.au/otherloans/commercial-loan.jpg"
+                  src="https://assets.expertbrokers.com.au/commercialloan.webp"
                   alt="Image Description"
                   width={1}
                   height={1}

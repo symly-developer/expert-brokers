@@ -2,10 +2,10 @@
 
 import React from 'react';
 
-import  Startup from 'views/Startup';
+import  LoanRepaymentCalculator from 'views/LoanRepaymentCalculator';
 
 const IndexPage = () => {
-  return <Startup />;
+  return <LoanRepaymentCalculator />;
 };
 
 export default IndexPage;

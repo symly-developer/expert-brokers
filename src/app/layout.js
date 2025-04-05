@@ -12,6 +12,28 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import 'aos/dist/aos.css';
 
+//Amplify
+import { Amplify } from 'aws-amplify';
+import outputs from '../../amplify_outputs.json';
+Amplify.configure(outputs);
+import { generateClient } from "aws-amplify/api";
+const client = generateClient();
+
+// Call the API
+client.queries.sayHello({
+  name: "Amplify",
+  bom: "HelloWorld",
+  
+})
+  .then((response) => {
+      console.log("Response:", response.data);
+  })
+  .catch((error) => {
+      console.error("Error:", error);
+  });
+
+
+
 /* eslint-disable react/prop-types */
 export default function RootLayout({ children }) {
   return (
@@ -61,6 +83,7 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
           rel="stylesheet"
         />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css"/>
       </head>
       <body>
         <Page>

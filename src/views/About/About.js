@@ -10,21 +10,18 @@ import {
   WhoWeAre,
   Application,
   HeroWithPrimaryBackgroundAndDesktopScreenshot,
-  Abbas,
-  Priyank,
-  Naitik,
-  Dwight,
-  Mary,
+  Nishi,
+
 } from './components';
 
-import { OurTeam, 
+import { CtaAlignedLeftWithTypedText, OurTeam, 
   // Helmet,
   VerticallyAlignedBlogCardOverlappedWithDescriptionBox,
 } from '../../commoncomponents';
 
 const About = () => {
   return (
-    <Main colorInvert={true}>
+    <Main colorInvert={true }>
       {/* <Helmet
         title="About Us at Cash Capital"
         description="Learn more about Cash Capital. We are the best in the business when it comes to loans."
@@ -46,16 +43,16 @@ const About = () => {
       <Container maxWidth={800} paddingY={'0 !important'}>
         <Divider />
       </Container>
-      <Container>
+      {/* <Container>
         <OurTeam />
-      </Container>
+      </Container> */}
       <Container>
-        <Abbas />
+        <Nishi />
       </Container>
       <Container maxWidth={800} paddingTop={2}>
-        <Application name='Abbas' />
+        <Application name='Nishi' />
       </Container>
-      <Container>
+      {/* <Container>
         <Priyank />
       </Container>
       <Container maxWidth={800} paddingTop={2}>
@@ -63,11 +60,11 @@ const About = () => {
       </Container>
       <Container>
         <Naitik />
-      </Container>
+      </Container> */}
       {/* <Container maxWidth={800} paddingTop={2}>
         <Application name='Naitik' />
       </Container> */}
-      <Container>
+      {/* <Container>
         <Dwight />
       </Container>
       <Container>
@@ -75,7 +72,7 @@ const About = () => {
       </Container>
       <Container maxWidth={800} paddingTop={2}>
         <Application name='Naitik' />
-      </Container>
+      </Container> */}
       <Box bgcolor={'alternate.main'}>
         <Container>
           <HeroWithPrimaryBackgroundAndDesktopScreenshot />
@@ -85,9 +82,10 @@ const About = () => {
         <VerticallyAlignedBlogCardOverlappedWithDescriptionBox />
       </Container>
       
-      <Container maxWidth={800} paddingTop={2}>
-        <Application />
-      </Container>
+      {/* <Container maxWidth={800} paddingTop={2}>
+        <Application name='Us' />
+      </Container> */}
+      <CtaAlignedLeftWithTypedText />
     </Main>
   );
 };

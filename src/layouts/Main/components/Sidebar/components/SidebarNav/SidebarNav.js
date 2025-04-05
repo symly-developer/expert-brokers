@@ -11,8 +11,9 @@ const SidebarNav = ({ pages }) => {
   const { mode } = theme.palette;
 
   const {
-    homeloans: homeloanPages,
-    otherloans: otherloanPages,
+    services: servicePages,
+    // homeloans: homeloanPages,
+    // otherloans: otherloanPages,
     calculators: calculatorPages,
     about: aboutusPages,
     contacts: contactusPages,
@@ -46,13 +47,13 @@ const SidebarNav = ({ pages }) => {
       <Box paddingX={2} paddingY={2}>
         
         <Box>
-          <NavItem title={'Home Loans'} items={homeloanPages} />
+          <NavItem title={'Services'} items={servicePages} />
         </Box>
-        <Box>
+        {/* <Box>
           <NavItem title={'Other Loans'} items={otherloanPages} />
-        </Box>
+        </Box> */}
         <Box>
-          <NavItem title={'Calculators'} items={calculatorPages} />
+          <NavItem title={'Knoledge Centre'} items={calculatorPages} />
         </Box>
         <Box>
           <NavItem title={'About Us'} items={aboutusPages} />

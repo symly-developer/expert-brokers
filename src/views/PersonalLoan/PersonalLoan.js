@@ -29,7 +29,7 @@ import {
 const PersonalLoan = () => {
   const theme = useTheme();
   return (
-    <Main>
+    <Main colorInvert={true}>
       {/* <Helmet
         title="Personal Loans at Cash Capital"
         description="Get personal loans with Cash Capital. We are the best in the business when it comes to personal loans."
@@ -44,7 +44,7 @@ const PersonalLoan = () => {
       <Box
         sx={{
           backgroundColor: theme.palette.alternate.main,
-          backgroundImage: `linear-gradient(120deg, ${theme.palette.background.paper} 0%, ${theme.palette.alternate.main} 100%)`,
+          backgroundImage: `linear-gradient(120deg, ${theme.palette.primary.main} 0%, ${theme.palette.primary.light} 100%)`,
           position: 'relative',
           marginTop: -13,
           paddingTop: 13,
@@ -92,7 +92,7 @@ const PersonalLoan = () => {
       <Container>
         <FAQContent />
       </Container>
-      <OurTeam />
+      {/* <OurTeam /> */}
 
       <VerticallyAlignedBlogCardOverlappedWithDescriptionBox />
       
