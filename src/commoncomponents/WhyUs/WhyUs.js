@@ -169,7 +169,7 @@ const WhyUs = () => {
         </Typography>
         <Typography
           variant={'h6'}
-          component={'p'}
+          component={'h6'}
           color={'text.secondary'}
           align={'center'}
         >

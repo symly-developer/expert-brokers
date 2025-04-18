@@ -62,7 +62,7 @@ const Hero = () => {
           bottom={0}
           left={0}
           width={'100%'}
-          height={{xs:'0%',lg:'30%'}}
+          // height={'auto'}
           zIndex={1}
           overflow={'hidden'}
         >
@@ -78,7 +78,7 @@ const Hero = () => {
                   filter: theme.palette.mode === 'dark' ? 'brightness(0.2)' : 'none',
                 }}
               />
-      </Box>
+        </Box>
         {/* Main Content Grid  */}
         <Box
           position={'absolute'}
@@ -188,7 +188,7 @@ const Hero = () => {
                     // maxWidth={{ xs: '50%', md: '60%', lg: '60%' }}
                     width={{ xs: '0%', md: '0%', lg: '100%' }}
                     
-                    maxWidth={{lg: '80%', xl: '100%'}}
+                    maxWidth={{lg: '70%', xl: '90%'}}
                     sx={{
                       filter: theme.palette.mode === 'dark' ? 'brightness(0.8)' : 'none',
                     }}

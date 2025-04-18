@@ -62,7 +62,7 @@ const Main = () => {
               </Typography>
               <Typography
                 variant="h6"
-                component="p"
+                component="h6"
                 color="text.primary"
                 align={'left'}
                 textAlign={'justify'}
