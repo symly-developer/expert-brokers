@@ -17,15 +17,12 @@ const Hero = () => {
   
   return (
     // this is main container size
-    <Box position={'relative'} zIndex={2} minHeight={'100vh'}>
+    <Box position={'relative'} zIndex={2} height={{ xs: '100vh', md: '100vh' }}>
+      {/* Video */}
       <Box width={1} height={1} position={'absolute'} overflow={'hidden'}>
         <Box
-          // width={'100vw'}
-          height={'100vh'} // Same height across devices
+          
           position={'absolute'}
-          // top={'50%'}
-          // left={'50%'}
-          // sx={{ transform: 'translate(-50%,-50%)' }}
           top={0}
           left={0}
           sx={{ transform: 'translate(0, 0)' }} // Remove any transform
@@ -36,173 +33,180 @@ const Hero = () => {
             loop
             muted
             playsInline
-            // minWidth={'100%'}
-            minHeight={{xs: '166vh', sm: '200vh', md: '120vh', lg: '120vh'}} // this is the height of video
+            minHeight={{ xs: '100vh', md: '100vh' }} // this is the height of video
             
-          
-            src="https://assets.expertbrokers.com.au/hero-bg-video.mp4">
+            
+            
+            src="https://assets.expertbrokers.com.au/hero-bg-video1.mp4">
 
           </Box>
         </Box>
       </Box>
-     
-      <Box
-        position={'relative'}
-        zIndex={2}
-        // minHeight={{ xs: 'calc(130vh + 10px)', md: 'calc(100vh + 10px)', lg: 'calc(100vh + 10px)' }} // this is the height of the wave thing
-        // minHeight={'calc(130vh + 10px)'} // this is the height of the wave thing
-        // minHeight={{ xs: '90vh', md: '90vh', lg: '90vh' }}
-        minHeight={{ xs: '100vh', md: '100vh', lg: '100vh' }} // this is the height of the wave thing
-        display={'flex'}
-        justifyContent={'center'}
-        // alignItems={'center'}
-        marginTop={-13}
-        paddingTop={13}
-        sx={{
-          '&::after': {
-            content: '""',
-            backgroundColor: theme.palette.primary.dark,
-            backgroundImage: `linear-gradient(315deg, ${theme.palette.primary.main} 0%,rgb(23, 103, 240) 70%)`,
-            opacity: '0.6',
-            width: 1,
-            height: 1, // this is the height of the wave thing
-            position: 'absolute',
-            left: 0,
-            right: 0,
-            top: 0,
-            bottom: 0,
-            zIndex: 3,
-          },
-        }}
-      >
-
-      {/* This is the wave thing overlay */}
+      {/* Overlay */}
       <Box
         position={'absolute'}
-        bottom={-10}
+        top={0}
         left={0}
-        width={'100%'}
-        height={'auto'}
-        zIndex={4}
-        overflow={'hidden'}
-      >
-        <Box
-          component={'img'}
-          src="https://assets.expertbrokers.com.au/hero-bg-3.webp"
-          // height={1}
-          minHeight={1}
-          width={{ xs: '100%', md: '100%', lg: '100%' }}
-          // minWidth={1}
-          // maxWidth={1920}
-          sx={{
-            filter: theme.palette.mode === 'dark' ? 'brightness(0.7)' : 'none',
-          }}
-        />
-      </Box>
-      
-      {/* This is the content and picture */}
-      <Container position={'relative'} marginTop={6} zIndex={4}>
-      <Grid container spacing={2}>
-        <Grid item xs={12} md={8} lg={8}>
-          <Box>
-            <Box marginBottom={4}>
-              <Typography
-                variant={'h2'}
-                component={'h1'}
-                align={'left'}
-                gutterBottom
-                sx={{
-                  color: theme.palette.common.white,
-                  fontWeight: 600,
-                }}
-              >
-                Helping you achieve your fnancial goals with {' '}
-                <Typography
-                  variant={'h2'}
-                  component={'span'}
-                  sx={{
-                    color: theme.palette.secondary.main,
-                    fontWeight: 700,
-                  }}
-                >
-                  Our Expert Services
-                  </Typography>
-              </Typography>
-              <Typography
-                variant={'h6'}
-                component={'p'}
-                align={'left'}
-                sx={{
-                  color: theme.palette.common.white,
-                  fontWeight: 700,
-                }}
-              >
-                With 20+ years in finance, we’re a trusted choice for home, commercial, personal, and SMSF loans. mission is more than just helping people secure loans—it’s about making dreams a reality, creating security, and building a future filled with hope and opportunity.
-              </Typography>
-              
-            </Box>
-            
-            <Box marginBottom={1} marginTop={5}  display={'flex'} justifyContent={'left'}>
-              <Stack direction="row" spacing={2}>             
-                <Button
-                  variant="contained"
-                  color="secondary"
-                  component="a"
-                  target="blank"
-                  href="/contact-sidebar-map#contact-block"
-                  size="large"
-                  sx={{
-                    color: theme.palette.common.black,
-                    fontWeight: 700,
-                  }}
-                >
-                  Get In Touch
-                </Button>
-                <Button
-                  variant="outlined"
-                  color='primary'
-                  component="a"
-                  target="blank"
-                  href="/borrowing-power-calculator"
-                  size="large"
-                  sx={{
-                    color: theme.palette.common.white,
-                    fontWeight: 700,
-                    borderColor: theme.palette.common.white}}
-                >
-                  Loan Calculators 
-                </Button>
-              </Stack>
-            </Box>
-            
-          </Box>
-        </Grid> 
-        <Grid item xs={12} md={4} lg={4}>
-          <Box
-            display={'flex'}
-            justifyContent={'center'}
-            // alignItems={'center'}
-            // height={'130%'}
-            // width={'100%'}
-          >
-            <Box
-              component={'img'}
-              src="https://assets.expertbrokers.com.au/nishi-sharma-broker-photo7.webp"
-              height={{xs: '.6',  md: '1', lg: '1' }}
-              width={{xs: '.6',  md: '1', lg: '1' }}
-              maxWidth={500}
-              sx={{
-                filter: theme.palette.mode === 'dark' ? 'brightness(0.8)' : 'none',
-              }}
-            />
-          </Box>
-          </Grid> 
-      </Grid>
+        width={1}
         
-      </Container>
-      </Box>
+        height={1}
+        sx={{
+          backgroundColor: theme.palette.primary.dark,
+          backgroundImage: `linear-gradient(315deg, ${theme.palette.primary.main} 0%,rgba(23, 103, 240, 0.42) 70%)`,
+          opacity: '0.5',
+        }}
+      />
+      {/* This is the wave thing overlay */}
+      <Box
+          position={'absolute'}
+          bottom={0}
+          left={0}
+          width={'100%'}
+          // height={'auto'}
+          zIndex={1}
+          overflow={'hidden'}
+        >
+              <Box
+                component={'img'}
+                src="https://assets.expertbrokers.com.au/hero-bg-3.webp"
+                // height={1}
+                minHeight={1}
+                width={{ xs: '100%', md: '100%', lg: '100%' }}
+                // minWidth={1}
+                // maxWidth={1920}
+                sx={{
+                  filter: theme.palette.mode === 'dark' ? 'brightness(0.2)' : 'none',
+                }}
+              />
+        </Box>
+        {/* Main Content Grid  */}
+        <Box
+          position={'absolute'}
+          top={0}
+          left={0}
+          width={1}
+          
+          display={'flex'}  
+          alignItems={'center'}
+          justifyContent={'center'}
+          zIndex={0}
+          paddingTop={10}
+          // paddingTop= {{
+          //   xs: '30vh',
+          //   sm: '45vh',
+          //   md: '25vh',
+          //   lg: '15vh',
+          //   xl: '10vh',
+          // }}
+          >
+          <Container >
+
+            <Grid container spacing={2}>
+              <Grid item xs={12} md={8} lg={8}>
+                <Box>
+                  <Box marginBottom={4}>
+                    <Typography
+                      variant={'h2'}
+                      component={'h1'}
+                      align={'left'}
+                      gutterBottom
+                      sx={{
+                        color: theme.palette.common.white,
+                        fontWeight: 600,
+                      }}
+                    >
+                      Helping you achieve your fnancial goals with {' '}  
+                      <Typography
+                        variant={'h2'}
+                        component={'span'}
+                        sx={{
+                          color: theme.palette.secondary.main,
+                          fontWeight: 700,
+                        }}
+                      >
+                        Our Expert Services
+                      </Typography>
+                    </Typography>
+                    <Typography
+                      variant={'h6'}
+                      component={'p'}
+                      align={'left'}
+                      sx={{
+                        color: theme.palette.common.white,
+                        fontWeight: 700,
+                      }}
+                    > 
+                      With 25+ years in finance, we help clients secure home, commercial, personal, and SMSF loans—turning goals into reality and building a secure future.
+                    </Typography>
+                  </Box>
+                  <Box marginBottom={1} marginTop={5}  display={'flex'} justifyContent={'left'}>
+                    <Stack direction="row" spacing={2}>
+                      <Button
+                        variant="contained"
+                        color="secondary"
+                        component="a"
+                        target="blank"
+                        href="/contact-sidebar-map#contact-block"
+                        size="large"
+                        sx={{
+                          color: theme.palette.common.black,  
+                          fontWeight: 700,
+                        }}
+                      >
+                        Get In Touch
+                      </Button>
+                      <Button
+                        variant="outlined"
+                        color='primary'
+                        component="a"
+                        target="blank"
+                        href="/borrowing-power-calculator"
+                        size="large"
+                        sx={{
+                          color: theme.palette.common.white,
+                          fontWeight: 700,
+                          borderColor: theme.palette.common.white}} 
+                      >
+                        Loan Calculators
+                      </Button>
+                    </Stack>
+                  </Box>
+                </Box>
+              </Grid>
+              <Grid item xs={12} md={4} lg={4}>
+                <Box
+                  display={'flex'}
+                  justifyContent={'center'}
+                  // alignItems={'center'}
+                  // height={'130%'}
+                  // width={'100%'} 
+                >
+                  <Box
+                    component={'img'}
+                    src="https://assets.expertbrokers.com.au/nishi-sharma-broker-photo9.webp"
+                    // height={{xs: '.6',  md: '.6', lg: '.6' }}
+                    // maxWidth={{ xs: '50%', md: '60%', lg: '60%' }}
+                    width={{ xs: '0%', md: '0%', lg: '100%' }}
+                    
+                    maxWidth={{lg: '70%', xl: '90%'}}
+                    sx={{
+                      filter: theme.palette.mode === 'dark' ? 'brightness(0.8)' : 'none',
+                    }}
+                  />
+                </Box>
+              </Grid>
+            </Grid>
+          </Container>
+        </Box>
+
+
       
-    </Box>
+        
+      
+  
+      
+      
+  </Box>
   );
 };
 

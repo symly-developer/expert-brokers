@@ -40,7 +40,7 @@ const CommercialLoan = () => {
           backgroundColor: theme.palette.alternate.main,
           backgroundImage: `linear-gradient(120deg, ${theme.palette.primary.main} 0%, ${theme.palette.primary.light} 100%)`,
           position: 'relative',
-          marginTop: -13,
+          // marginTop: -13,
           paddingTop: 13,
         }}
       >
@@ -90,7 +90,7 @@ const CommercialLoan = () => {
       </Container> */}
       {/* <OurTeam /> */}
 
-      <VerticallyAlignedBlogCardOverlappedWithDescriptionBox />
+      {/* <VerticallyAlignedBlogCardOverlappedWithDescriptionBox /> */}
       
       <CtaAlignedLeftWithTypedText />
     </Main>

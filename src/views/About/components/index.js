@@ -4,4 +4,5 @@ export { default as WhoWeAre } from './WhoWeAre';
 export { default as Application } from './Application';
 export { default as HeroWithPrimaryBackgroundAndDesktopScreenshot } from './HeroWithPrimaryBackgroundAndDesktopScreenshot';
 
+export { default as Goby } from './Goby';
 export { default as Nishi } from './Nishi';

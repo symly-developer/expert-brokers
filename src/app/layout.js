@@ -20,17 +20,17 @@ import { generateClient } from "aws-amplify/api";
 const client = generateClient();
 
 // Call the API
-client.queries.sayHello({
-  name: "Amplify",
-  bom: "HelloWorld",
+// client.queries.sayHello({
+//   name: "Amplify",
+//   bom: "HelloWorld",
   
-})
-  .then((response) => {
-      console.log("Response:", response.data);
-  })
-  .catch((error) => {
-      console.error("Error:", error);
-  });
+// })
+//   .then((response) => {
+//       console.log("Response:", response.data);
+//   })
+//   .catch((error) => {
+//       console.error("Error:", error);
+//   });
 
 
 

@@ -615,8 +615,11 @@ const Form = () => {
                   ? 'http://assets.thefrontdigital.com.au/the-front-digital-marketing-web-designing-logo-black.svg'
                   : 'http://assets.thefrontdigital.com.au/the-front-digital-marketing-web-designing-logo-white.svg'
               }
-              height={1}
-              width={1}
+              height={0.7}
+              width={0.7}
+              sx={{
+                filter: 'grayscale(100%) contrast(0.2)',
+              }}
             />
           </Box>
         </Stack>

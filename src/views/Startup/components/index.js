@@ -13,3 +13,4 @@ export { default as Goby } from './Goby';
 // export { default as PromptLoanCalc } from './PromptLoanCalc';
 export { default as FeaturesHomeLoans } from './FeaturesHomeLoans';
 export { default as FeaturesOtherLoans } from './FeaturesOtherLoans';
+export { default as FullScreenHeroWithImageSlider } from './FullScreenHeroWithImageSlider';

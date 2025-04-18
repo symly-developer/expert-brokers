@@ -108,10 +108,7 @@ const pages = {
     },
   ],
   calculators: [
-    {
-      title: 'Blog',
-      href: 'https://blog.expertbrokers.com.au',
-    },
+    
     {
       title: 'Borrowing Power Calc',
       href: '/borrowing-power-calculator',
@@ -143,7 +140,7 @@ const pages = {
       href: '/about',
     },
     {
-      title: 'Working With Us',
+      title: 'Why Chose Us',
       href: '/working-with-us',
     },
   

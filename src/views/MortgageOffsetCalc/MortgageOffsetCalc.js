@@ -5,7 +5,7 @@ import Main from 'layouts/Main';
 import HeroWithPrimaryBackgroundAndDesktopScreenshot from './components/HeroWithPrimaryBackgroundAndDesktopScreenshot';
 // import CtaSimpleCentered from './components/CtaSimpleCentered';
 import Calculator from './components/Calculator';
-
+import { Box } from '@mui/material';
 // import { Helmet } from '../../commoncomponents';
 
 const MortgageOffsetCalc = () => {
@@ -24,7 +24,14 @@ const MortgageOffsetCalc = () => {
         noIndex={false}
 
       ></Helmet> */}
+      <Box
+        sx={{
+          
+          paddingTop: 13,
+        }}
+      >
       <HeroWithPrimaryBackgroundAndDesktopScreenshot />
+      </Box>
       {/* <CtaSimpleCentered /> */}
       <Calculator />
     </Main>

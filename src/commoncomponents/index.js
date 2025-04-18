@@ -8,3 +8,4 @@ export { default as PromptLoanCalc } from './PromptLoanCalc';
 export { default as Partners } from './Partners';
 export { default as CtaAlignedLeftWithTypedText } from './CtaAlignedLeftWithTypedText';
 export { default as VerticallyAlignedBlogCardOverlappedWithDescriptionBox } from './VerticallyAlignedBlogCardOverlappedWithDescriptionBox';
+export { default as AppWithBoxedLogos } from './AppWithBoxedLogos';

@@ -39,18 +39,18 @@ const Main = ({ children, colorInvert = false, bgcolor = 'transparent' }) => {
 
   return (
     <Box>
-      <Box bgcolor={bgcolor} position={'relative'} zIndex={theme.zIndex.appBar}>
-        {/* <Container paddingTop={'8px !important'} paddingBottom={'0 !important'}>
+      {/* <Box bgcolor={bgcolor} position={'relative'} zIndex={theme.zIndex.appBar}>
+        <Container paddingTop={'8px !important'} paddingBottom={'0 !important'}>
           <TopNav colorInvert={colorInvert} />
-        </Container> */}
-      </Box>
+        </Container>
+      </Box> */}
       <AppBar
-        position={'sticky'}
+        // position={'sticky'}
         sx={{
           top: 0,
           backgroundColor: trigger ? theme.palette.background.paper : bgcolor,
         }}
-        elevation={trigger ? 1 : 0}
+        elevation={trigger ? 1: 0}
       >
         <Container paddingY={1}>
           <Topbar

@@ -149,15 +149,15 @@ const Hero = () => {
             <Grid item lg={6} md={6}  sm={12}  xs={12}>
               <Typography
                 variant="h6"
-                component="p"
+                component="h6"
                 color="text.primary"
                 sx={{
                   color: 'common.white',
                 }}
                 align='center'
               >
-                <b>Phone:</b> +61 401 809 852 <br />
-                <b>Email:</b> nishisharma@expertbrokers.com.au <br />
+                <b>Phone:</b> <a href="tel:+61401809852" style={{ textDecoration: 'none' }}>  +61 401 809 852 </a> <br />
+                <b>Email:</b> <a href="mailto:nishisharma@expertbrokers.com.au" style={{ textDecoration: 'none' }}>nishisharma@expertbrokers.com.au</a><br />
               </Typography>
             </Grid>
           </Grid>

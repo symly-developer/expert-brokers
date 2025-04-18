@@ -23,7 +23,7 @@ const HeroWithPrimaryBackgroundAndDesktopScreenshot = () => {
     >
       <Container>
         <Grid container spacing={4}>
-          <Grid item container alignItems={'center'} xs={12} md={6}>
+          <Grid item container alignItems={'center'} xs={12} md={12}>
             <Box>
               <Box marginBottom={2}>
                 <Typography
@@ -44,7 +44,7 @@ const HeroWithPrimaryBackgroundAndDesktopScreenshot = () => {
               
             </Box>
           </Grid>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={12}>
             <Box
               sx={{
                 position: 'relative',

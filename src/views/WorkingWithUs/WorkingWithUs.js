@@ -33,17 +33,8 @@ const Pricing = () => {
 
   return (
     <Main>
-      {/* <Helmet
-        title="Smooth working with brokers and banks at Cash Capital "
-        description="We work with you to get the best deal from the banks and brokers. We are the best in the business."
-        link={'/working-with-us'}
-        keywords={''}
-        imageCard={'https://assets.cashcapital.com.au/logo192.png'}
-        largeTwitterCard={true}
-        addPostfixTitle={false}
-        noIndex={false}
-
-      ></Helmet> */}
+     
+     
       <MainSection />
       <Container>
         <Plans />
@@ -67,7 +58,7 @@ const Pricing = () => {
       
       <FeaturesHomeLoans />
       {/* <FeaturesOtherLoans /> */}
-      <VerticallyAlignedBlogCardOverlappedWithDescriptionBox />
+      {/* <VerticallyAlignedBlogCardOverlappedWithDescriptionBox /> */}
       <CtaAlignedLeftWithTypedText />  
       
     </Main>

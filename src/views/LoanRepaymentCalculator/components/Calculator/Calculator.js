@@ -12,10 +12,11 @@ const Calculator = () => {
     <Container>
       <Grid container spacing={{ xs: 4, md: 8 }}>
         <Grid item xs={12} md={6}>
-          <CalcText />
+        <Form />
         </Grid>
         <Grid item container xs={12} md={6} alignItems={'center'}>
-          <Form />
+          
+          <CalcText />
         </Grid>
       </Grid>
     </Container>

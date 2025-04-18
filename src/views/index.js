@@ -1,3 +1,5 @@
+import Faq from './Faq';
+
 export { default as Home } from './Home';
 export { default as About } from './About';
 export { default as AssetFinance } from './AssetFinance';
@@ -24,3 +26,4 @@ export { default as SMSFLoan } from './SMSFLoan';
 export { default as StampDutyCalc } from './StampDutyCalc';
 export { default as Startup } from './Startup';
 export { default as WorkingWithUs } from './WorkingWithUs';
+export { default as Faq } from './Faq';

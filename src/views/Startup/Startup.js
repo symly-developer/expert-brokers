@@ -5,8 +5,9 @@ import { useTheme } from '@mui/material/styles';
 import Main from 'layouts/Main';
 import Container from 'components/Container';
 import {
+  FullScreenHeroWithImageSlider,
   Hero,
-  Goby,
+  
 } from './components';
 import FeaturesHomeLoans from './components/FeaturesHomeLoans';
 import FeaturesOtherLoans from './components/FeaturesOtherLoans';
@@ -18,6 +19,7 @@ import {CtaAlignedLeftWithTypedText,
   HeroWithPrimaryBackgroundAndDesktopScreenshot,
   // Helmet,
   VerticallyAlignedBlogCardOverlappedWithDescriptionBox,
+  AppWithBoxedLogos,
 } from '../../commoncomponents';
 
 // import Helmet from 'react-helmet';
@@ -61,91 +63,40 @@ const Startup = () => {
       
       <Main colorInvert={true}>
         
+        {/* Main Hero */}
         <Hero />
-        
 
-        <Container marginTop={'10vh'} >
+        {/* Lead generating mini app */}
+        <AppWithBoxedLogos />
+
+        {/* 60 PLus Banks */}
+        <HeroWithPrimaryBackgroundAndDesktopScreenshot />
+        <FullScreenHeroWithImageSlider />
+        
+        <GoogleReviews />
+        {/* <Container marginTop={'10vh'} >
           <WhyUs />
-        </Container>
+        </Container> */}
+        
 
         {/* <HeroWithBackgroundVideo /> */}
         
-        <Box bgcolor={'primary.dark'}  
-        > 
-         
-          <Box maxWidth={1} alignItems={'center'}>
-          <Box
-            className={'jarallax'}
-            data-jarallax
-            data-speed="0.2"
-            position={'relative'}
-            minHeight={'110vh'}
-            width={'100%'}
-            display={'flex'}
-            alignItems={'center'}
-            id="agency__portfolio-item--js-scroll"
-            bgcolor="rgba(59, 79, 197, 0.49)" 
-          >
-            {/* Background Image */}
-            <Box
-              className={'jarallax-img'}
-              sx={{
-                position: 'absolute',
-                top: 0,
-                left: 0,
-                width: '100%',
-                height: '100%',
-                backgroundImage: `url('https://assets.expertbrokers.com.au/jaralax-image2.webp')`,
-                backgroundSize: 'cover',
-                backgroundRepeat: 'no-repeat',
-                backgroundPosition: {
-                  xs: 'right center', // small screens - crop left
-                  sm: 'center center', // medium and up - default center
-                },
-                zIndex: 0,
-              }}
-            />
 
-            {/* Translucent Overlay */}
-            <Box
-              position="absolute"
-              top={0}
-              left={0}
-              width="100%"
-              height="100%"
-              sx={{
-                background: `linear-gradient(to right, rgba(25, 25, 25, 0.7), rgba(0, 0, 50, 0.6))`,
-                // opacity: 1,
-                // transition: 'opacity 0.3s ease-in-out',
-              }}
-              // bgcolor={ 'linear-gradient(to right, rgba(25, 25, 25, 0.7), rgba(0, 0, 50, 0.6))'}
-              zIndex={1}
-            />
+        
 
-            {/* Content */}
-            <Container sx={{ position: 'relative', zIndex: 2 }}>
-              <Goby />
-            </Container>
-          </Box>
-
-          
-        </Box>
-
-
-        </Box>
         {/* <Divider /> */}
 
-        <HeroWithPrimaryBackgroundAndDesktopScreenshot />
+        
 
         <FeaturesHomeLoans />
-        <GoogleReviews />
+        
         <Divider />
         <PromptLoanCalc/> 
         
         
         {/* <FeaturesOtherLoans /> */}
-        <VerticallyAlignedBlogCardOverlappedWithDescriptionBox />
-        <Divider />
+        {/* <VerticallyAlignedBlogCardOverlappedWithDescriptionBox /> */}
+        
         <CtaAlignedLeftWithTypedText />          
         
       </Main>

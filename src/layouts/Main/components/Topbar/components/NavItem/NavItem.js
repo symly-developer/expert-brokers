@@ -17,6 +17,7 @@ const NavItem = ({ title, id, items, colorInvert = false }) => {
 
   const handleClick = (event) => {
     if (anchorEl !== event.currentTarget) {
+      
       setAnchorEl(event.currentTarget);
     }
   };
@@ -62,8 +63,8 @@ const NavItem = ({ title, id, items, colorInvert = false }) => {
         <ExpandMoreIcon
           sx={{
             marginLeft: theme.spacing(1 / 4),
-            width: 10,
-            height: 18,
+            width: 16,
+            height: 16,
             color: linkColor,
           }}
         />
