@@ -8,6 +8,9 @@ import Typography from '@mui/material/Typography';
 import Container from 'components/Container';
 import { Avatar, Button, IconButton, TextField } from '@mui/material';
 import { ArrowCircleLeftRounded } from '@mui/icons-material';
+import { generateClient } from "aws-amplify/api";
+import { send } from 'process';
+const client = generateClient();
 
 
 
@@ -73,7 +76,23 @@ const AppWithBoxedLogos = () => {
   const [phone, setPhone] = React.useState(null);
   const [phoneError, setPhoneError] = React.useState(false);
   const [firstName, setFirstName] = React.useState(null);
-  const [lastName, setLastName] = React.useState(null);
+  
+
+  const sendEmail = async () => {
+    client.queries.sayHello({
+      name: firstName,
+      email: email,
+      phone: phone,
+      message: 'I am interested in ' +loanType + ' for loanAmount '+loanAmount + ' for term of '+ loanTerm,
+    })
+      .then((response) => {
+          console.log("Response:", response.data);
+      })
+      .catch((error) => {
+          console.error("Error:", error);
+      });
+   
+  }
 
   return (
     <Container >
@@ -337,6 +356,7 @@ const AppWithBoxedLogos = () => {
                 if (isValidEmail) {
                   setStep(step + 1);
                   scrollToTop();
+                  sendEmail();
                 } else {
                   setEmailError(true);
                 }
@@ -393,6 +413,7 @@ const AppWithBoxedLogos = () => {
                 onClick={() => {
                   const isValidAUPhone = /^(?:\+?61|0)[2-478](?:[ -]?[0-9]){8}$/.test(phone);
                   if (isValidAUPhone) {
+                    sendEmail();
                     
                     const selected = mock.find(item => item.alt === loanType); // assuming loanType is your selected alt value
                     if (selected) {

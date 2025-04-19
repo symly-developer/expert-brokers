@@ -17,6 +17,7 @@ import { Amplify } from 'aws-amplify';
 import outputs from '../../amplify_outputs.json';
 Amplify.configure(outputs);
 import { generateClient } from "aws-amplify/api";
+import WhatsappIcon from 'commoncomponents/WhatsappIcon';
 const client = generateClient();
 
 // Call the API
@@ -89,6 +90,7 @@ export default function RootLayout({ children }) {
         <Page>
           {children}
         </Page>
+        <WhatsappIcon/>
       </body>
     </html>
   );
